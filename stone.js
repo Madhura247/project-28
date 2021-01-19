@@ -24,7 +24,7 @@ class Stone {
     push();
     translate(pos.x, pos.y)
     imageMode(RADIUS);
-    image(this.image, 0, 0, this.width, this.height);
+    image(this.image, 0, 0, this.r, this.r);
     pop();
     }
  
