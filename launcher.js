@@ -10,7 +10,19 @@ class Launcher{
         this.launcher = Constraint.create(options);
         World.add(world, this.launcher);
     }
+    
+    fly() {
+        this.launcher.bodyA = null;
+    }
+    
 
+
+    attach(body) {
+        this.sling.bodyA = body;
+    }
+    
+    
+    
     display(){
         if (this.launcher.bodyA) {
         var pointA = this.launcher.bodyA.position;
@@ -20,8 +32,4 @@ class Launcher{
         }
     }
 
-    fly() {
-        this.launcher.bodyA = null;
     }
-    
-}
