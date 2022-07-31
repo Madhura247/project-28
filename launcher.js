@@ -18,7 +18,7 @@ class Launcher{
 
 
     attach(body) {
-        this.sling.bodyA = this.launcher.body;
+        this.launcher.bodyA = this.launcher.body;
     }
     
     
